@@ -31,6 +31,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupView(homeConfig: HomeConfig) = with(binding) {
+        animationView.setAnimationFromUrl(homeConfig.animationUrl)
+        animationView.playAnimation()
+
         toolbar.title = homeConfig.toolbar.text
         toolbar.setTitleTextColor(homeConfig.toolbar.textColor.toHexaColor())
         toolbar.setBackgroundColor(homeConfig.toolbar.backgroundColor.toHexaColor())

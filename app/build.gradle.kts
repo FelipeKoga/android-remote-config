@@ -50,6 +50,7 @@ dependencies {
     implementation(libs.firebase.remoteconfig)
     implementation(libs.activity.ktx)
     implementation(libs.gson)
+    implementation(libs.lottie)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)

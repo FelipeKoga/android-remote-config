@@ -5,7 +5,7 @@ data class HomeConfig(
     val firstText: Text,
     val secondText: Text,
     val primaryButton: Widget,
-    val banner: String,
+    val animationUrl: String,
 )
 
 data class Text(
