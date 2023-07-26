@@ -2,6 +2,7 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.kotlinAndroid)
+    alias(libs.plugins.googleServices)
 }
 
 android {
@@ -34,6 +35,9 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -44,6 +48,8 @@ dependencies {
     implementation(libs.constraintlayout)
     implementation(platform(libs.firebase.bom))
     implementation(libs.firebase.remoteconfig)
+    implementation(libs.activity.ktx)
+    implementation(libs.gson)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)

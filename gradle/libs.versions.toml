@@ -10,6 +10,8 @@ material = "1.9.0"
 constraintlayout = "2.1.4"
 google-services = "4.3.15"
 firebase-bom = "32.2.0"
+activity-ktx = "1.7.2"
+gson = "2.10.1"
 
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
@@ -21,6 +23,8 @@ material = { group = "com.google.android.material", name = "material", version.r
 constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebase-bom"}
 firebase-remoteconfig = { group = "com.google.firebase", name = "firebase-config-ktx" }
+activity-ktx = { group = "androidx.activity", name = "activity-ktx", version.ref = "activity-ktx"}
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson"}
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
